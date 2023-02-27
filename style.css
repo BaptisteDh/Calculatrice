@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body { background-color: #ffffff;}
+#calculator {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .screen p {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .screen {
+    height: 150px;
+    background-color: #22252d;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  #result {
+    font-size: 60px;
+    text-align: right;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  
+  .keypad {
+    background-color: #292d36;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #expression {
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  
+  button {
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    margin: 10px 0;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  
+  button:active {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    transform: translateY(4px);
+  }
+  
+  #clear, #divide, #multiply, #substract, #add, #equals {
+    background-color: #e74c3c;
+  }
+  
+  #clear, #pam, #pourc {
+    background-color: #16a085;
+  }
+  
+#toggle:checked + #calculator .screen{
+  background-color: #ffffff;
+}
+    
+#toggle:checked + #calculator .keypad{
+  background-color: #f9f9f9;
+} 
+
+#toggle:checked + #calculator p{
+  color: #292d36;
+}
+
+#toggle:checked + #calculator button{
+  background-color: #d4d4d4;
+  color: #292d36;
+} 
+
+#toggle:checked + #calculator #pam{
+  color:#16a085;
+} 
+
+#toggle:checked + #calculator #clear{
+  color:#16a085;
+} 
+
+#toggle:checked + #calculator #pourc{
+  color:#16a085;
+}
+
+#toggle:checked + #calculator #divide{
+  color:#e74c3c;
+}
+
+#toggle:checked + #calculator #multiply{
+  color:#e74c3c;
+}
+
+#toggle:checked + #calculator #substract{
+  color:#e74c3c;
+}
+
+#toggle:checked + #calculator #add{
+  color:#e74c3c;
+}
+
+#toggle:checked + #calculator #equals{
+  color:#e74c3c;
+}
+
